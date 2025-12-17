@@ -9,25 +9,32 @@
 {% endblock %}
 
 {% block body_contents %}
-    
-    <div class = "intro-blog">
-        {% include "blog/includes/header.html" %}
+    {% include "blog/includes/header.html" %}
+    <div class = "intro-blog">        
         <figure class = "image-caption">
             <img src="{% static '/blog/images/disney_palace.jpeg' %}" alt="Renjana Elango profile pic">
             <figcaption class = 'text'>Renjana Elango's Blogs</figcaption>            
         </figure>
         <p class = 'text'>{{ blog_introduction }}</p>
     </div>
+    
     <div class = "post-container">  
         <h1> This is my Favourite Shows </h1>
         <div class = "post-allign">                        
             {% for post in posts %}
-                <div>
-                    <img src="{% static '/blog/images/' %}{{ post.image }}" alt="Renjana Elango profile pic">
-                    <h1>{{ post.title }}</h1>
-                    <p>{{ post.content }}</p>
-                </div>
+                {% include "blog/includes/post.html" %}
             {% endfor %}        
         </div>
     </div>
-{% endblock %}  
+
+    <div id="about">
+        <h2>What I Do</h2>
+        <p>
+            I'm a Disney enthusiast, exploring the magic behind every movie, park, and story. 
+            I love sharing fun facts, reviews, and hidden gems with fellow fans.
+        </p>
+        <p>
+            My goal is to celebrate Disney's magic and connect with others who share the same love.
+        </p>
+    </div>
+{% endblock %} 
