@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.post-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+.post-link{
+    display: inline-block; /* needed for transform */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.post-link:hover {
+    background-color: lightcyan;
+    transform: scale(1.2);
+}

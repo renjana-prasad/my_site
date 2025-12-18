@@ -1,0 +1,64 @@
+.intro-blog {
+    background-color: purple;
+    color: #f3eded;
+    padding: 1em 6em 6em 6em;
+}
+
+.image-caption {
+    display:flex;
+    align-items: center;
+    gap : 1rem
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.image-caption img {
+    transform: rotate(-5deg); 
+}
+
+.text {
+    font-size: 2rem;
+}
+
+figcaption.text {
+    width: 350px;
+    font-size: 3rem;
+}
+
+.post-container{
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: -6em;
+    padding-bottom: 10px;
+    border : 4px solid black;
+    border-radius: 16px;
+    text-align: center;
+    background: white;
+    overflow: hidden;
+}
+
+.post-allign{
+    display: flex;
+}
+
+#about {
+  text-align: center;
+  padding: 3rem;
+  background-color: #e48900;
+  margin-top: 5rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+}
+
+#about p {
+  font-size: 1.5rem;
+  color: #353535;
+}
+
+
+

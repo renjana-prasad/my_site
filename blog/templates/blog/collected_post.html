@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block html_title %} All My Posts {% endblock %}
+
+{% block css_files %}
+    <link rel = "stylesheet" href = "{% static 'blog/collected_post.css' %}">
+    <link rel = "stylesheet" href = "{% static "includes/header.css" %}">
+{% endblock %}
+
+{% block body_contents %}
+    {% include "blog/includes/header.html" %}
+    <h1 id = 'center-align'> My Collected Posts </h1>
+    <div class = "combind-grid">
+        {% for post in posts %}
+            <div class = 'each-post'>
+                {% include "blog/includes/post.html" %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}  

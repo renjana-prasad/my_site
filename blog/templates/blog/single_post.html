@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block html_title %} {{ single_post.title }} {% endblock %}
+
+{% block css_files %}
+    <link rel = "stylesheet" href = "{% static "includes/header.css" %}">
+    <link rel = "stylesheet" href = "{% static 'blog/single_post.css' %}">
+{% endblock %}
+
+{% block body_contents %}
+    
+    {% include "blog/includes/header.html" %}
+
+    <div class = "post-info">
+        <div class = "group-img-title">
+            <h1> {{ single_post.title }} </h1>
+            <img src="{% static '/blog/images/' %}{{ single_post.image }}" alt="{{ post.title }}" onerror="this.onerror=null;this.src='{% static 'blog/images/disney_fallback.jpeg' %}';">
+        </div>
+        <p> {{ single_post.directed_by }} </p>
+        <p> Released on {{ single_post.release_date }} </p>
+    </div>
+
+    <div class = 'post-info'>
+        <p id = 'summary_content'>{{ single_post.content }}</p>
+    </div>
+
+{% endblock %}  
