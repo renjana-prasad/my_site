@@ -184,6 +184,6 @@ def individual_post(request, slug):
 
         return render(request, 'blog/single_post.html', {"single_post": identified_post})
     except Http404:
-        return render(request, 'blog/404.html', status=404)
+        raise Http404("Post not found")
     except Exception as e:
         raise Exception(f"Error loading individual post: {e}")
