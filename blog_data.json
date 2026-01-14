@@ -1,0 +1,455 @@
+[
+{
+    "model": "blog.tag",
+    "pk": 1,
+    "fields": {
+        "caption": "Animation"
+    }
+},
+{
+    "model": "blog.tag",
+    "pk": 2,
+    "fields": {
+        "caption": "Fantasy"
+    }
+},
+{
+    "model": "blog.tag",
+    "pk": 3,
+    "fields": {
+        "caption": "Adventure"
+    }
+},
+{
+    "model": "blog.tag",
+    "pk": 4,
+    "fields": {
+        "caption": "Family"
+    }
+},
+{
+    "model": "blog.tag",
+    "pk": 5,
+    "fields": {
+        "caption": "Musical"
+    }
+},
+{
+    "model": "blog.tag",
+    "pk": 6,
+    "fields": {
+        "caption": "Hero"
+    }
+},
+{
+    "model": "blog.tag",
+    "pk": 7,
+    "fields": {
+        "caption": "Magic"
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 1,
+    "fields": {
+        "first_name": "Byron",
+        "last_name": "Howard",
+        "email_address": "byron@disney.com",
+        "best_film": 2
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 2,
+    "fields": {
+        "first_name": "Don",
+        "last_name": "Hall",
+        "email_address": "don@disney.com",
+        "best_film": 8
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 3,
+    "fields": {
+        "first_name": "Jared",
+        "last_name": "Bush",
+        "email_address": "jared@disney.com",
+        "best_film": 1
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 4,
+    "fields": {
+        "first_name": "Ron",
+        "last_name": "Clements",
+        "email_address": "ron@disney.com",
+        "best_film": 5
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 5,
+    "fields": {
+        "first_name": "Guy",
+        "last_name": "Ritchie",
+        "email_address": "guy.ritchie@disney.com",
+        "best_film": 11
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 6,
+    "fields": {
+        "first_name": "Bill",
+        "last_name": "Condon",
+        "email_address": "bill.condon@disney.com",
+        "best_film": null
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 7,
+    "fields": {
+        "first_name": "Kenneth",
+        "last_name": "Branagh",
+        "email_address": "kenneth.branagh@disney.com",
+        "best_film": null
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 8,
+    "fields": {
+        "first_name": "Jon",
+        "last_name": "Favreau",
+        "email_address": "jon.favreau@disney.com",
+        "best_film": 14
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 9,
+    "fields": {
+        "first_name": "Ron",
+        "last_name": "Clements",
+        "email_address": "ron.clements@disney.com",
+        "best_film": null
+    }
+},
+{
+    "model": "blog.director",
+    "pk": 10,
+    "fields": {
+        "first_name": "Nathan",
+        "last_name": "Greno",
+        "email_address": "nathan.greno@disney.com",
+        "best_film": null
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 1,
+    "fields": {
+        "title": "Wish",
+        "image": "wish.jpeg",
+        "slug": "1-wish",
+        "release_date": "2023-11-22",
+        "directed_by": 3,
+        "summary": "A wish upon a star.",
+        "content": "In a magical kingdom hidden deep within a sprawling enchanted forest, young Aria discovers a world where animals speak, trees whisper ancient secrets, and rivers shimmer with colors unseen by human eyes. Guided by a mysterious talking owl named Orion, she embarks on a quest to uncover a hidden prophecy that foretells the rise of a hero destined to save both her world and the magical realm from a growing shadow. Along the way, Aria befriends a playful fox, a timid yet wise dragon, and a mischievous sprite, each teaching her valuable lessons about courage, friendship, and the strength that comes from believing in oneself. Challenges abound, from treacherous mountains guarded by stone giants to dark forests where illusions test her resolve, yet Aria’s determination and heart shine through. Through laughter, tears, and breathtaking adventures, she learns that bravery is not the absence of fear, but the willingness to act in spite of it, and that love, hope, and unity can overcome even the darkest magic. Her journey becomes a timeless tale of imagination and wonder, capturing the essence of courage, adventure, and the transformative power of believing in magic.",
+        "favourite": true,
+        "tag": [
+            1,
+            2,
+            7
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 2,
+    "fields": {
+        "title": "Encanto",
+        "image": "encanto.jpeg",
+        "slug": "2-encanto",
+        "release_date": "2021-11-24",
+        "directed_by": 1,
+        "summary": "A magical Colombian family.",
+        "content": "Beneath the endless night sky of a distant galaxy, a team of young space rangers takes on a mission that will test their bravery, intelligence, and loyalty to one another. Each member of the crew brings unique skills: a daring pilot, a genius engineer, a skilled medic, and a strategist with an uncanny sense of danger. Together, they must navigate asteroid fields, outsmart interstellar pirates, and uncover a sinister plot threatening countless worlds. As they explore strange planets filled with mysterious creatures and breathtaking landscapes, they discover that the key to success lies not in their weapons or technology, but in trust, teamwork, and the courage to stand up for what is right. Along the way, bonds are formed, friendships are tested, and the characters grow into heroes they never thought they could become. This story celebrates the excitement of adventure, the wonder of the unknown, and the enduring power of hope, inspiring audiences to look to the stars with awe and imagination.",
+        "favourite": true,
+        "tag": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 3,
+    "fields": {
+        "title": "Turning Red",
+        "image": "turning_red.jpeg",
+        "slug": "3-turning-red",
+        "release_date": "2022-03-11",
+        "directed_by": 2,
+        "summary": "Teen emotions turn magical.",
+        "content": "In a quaint village nestled between rolling hills and sparkling rivers, a gifted young musician named Elara stumbles upon an ancient melody hidden in her grandmother’s piano. As she plays the enchanting tune, magical creatures awaken, and long-forgotten wonders of the world begin to reappear. Guided by an eccentric composer who claims to know the secrets of the melody, Elara embarks on a journey that spans mystical forests, floating islands, and crystal-clear lakes teeming with life. Along the way, she learns that the music she wields can heal, unite, and inspire those around her, revealing the deep connection between creativity, courage, and compassion. Through challenges and trials, Elara discovers that her true strength comes not only from her talent but from her heart, teaching audiences that imagination and perseverance can unlock the extraordinary hidden within the ordinary world. This tale is a celebration of music, magic, and the timeless power of dreams.",
+        "favourite": false,
+        "tag": [
+            1,
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 4,
+    "fields": {
+        "title": "Frozen",
+        "image": "frozen2.jpeg",
+        "slug": "4-frozen-ii",
+        "release_date": "2019-11-22",
+        "directed_by": 1,
+        "summary": "Elsa searches her past.",
+        "content": "In a faraway kingdom where laughter is the strongest magic of all, a group of quirky villagers faces a comical series of events that threaten their beloved home. From runaway animals to enchanted mishaps, they must work together to restore harmony while learning that the heart of the kingdom is not its castles or treasures, but the joy and kindness shared among its people. Alongside a clever young hero with a big imagination, a wise elder who remembers the kingdom’s history, and a troupe of bumbling but lovable helpers, the story weaves humor, adventure, and lessons about friendship, empathy, and community. Through trials that range from hilarious misunderstandings to clever problem-solving, the characters demonstrate the power of optimism and courage, reminding viewers that laughter can illuminate even the darkest moments. This whimsical tale enchants audiences with its humor, heart, and the timeless charm of discovering magic in the everyday.",
+        "favourite": true,
+        "tag": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 5,
+    "fields": {
+        "title": "Moana",
+        "image": "moana.jpeg",
+        "slug": "5-moana",
+        "release_date": "2016-11-23",
+        "directed_by": 4,
+        "summary": "A journey across the ocean.",
+        "content": "On the high seas of a hidden ocean, a band of adventurous pirates sails aboard a ship brimming with secrets, treasures, and dreams. The fearless captain, along with her diverse crew, navigates treacherous waters, battles rival pirates, and solves cryptic riddles that lead to legendary artifacts. Along the way, friendships are forged, loyalty is tested, and the crew learns that true treasure lies not in gold or jewels but in courage, unity, and the bonds they share. Encountering mythical sea creatures, mysterious islands, and storms that challenge their resilience, they prove that bravery and cleverness can overcome even the most daunting obstacles. The story is rich with swashbuckling excitement, humor, and heart, celebrating adventure, the thrill of exploration, and the enduring magic of discovering that the greatest treasures are often intangible.",
+        "favourite": true,
+        "tag": [
+            1,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 6,
+    "fields": {
+        "title": "Raya and the Last Dragon",
+        "image": "raya.jpeg",
+        "slug": "6-raya-and-the-last-dragon",
+        "release_date": "2021-03-05",
+        "directed_by": 2,
+        "summary": "A warrior seeks the last dragon.",
+        "content": "High above the clouds, in a city that floats among the stars, two young dreamers find each other and embark on a journey that will change their lives forever. Amid breathtaking landscapes of floating gardens, shimmering waterfalls, and ethereal light, they navigate challenges of trust, courage, and self-discovery. Their love story unfolds against a backdrop of magical inventions, whimsical creatures, and breathtaking adventures, teaching them the importance of empathy, perseverance, and hope. As they confront the forces that threaten to dismantle their world, they discover that true power lies in connection, creativity, and the courage to follow one’s heart. This story is a soaring tale of romance, magic, and inspiration, leaving audiences with a sense of wonder, joy, and the belief that love and bravery can lift anyone beyond their limits.",
+        "favourite": false,
+        "tag": [
+            1,
+            2,
+            6
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 7,
+    "fields": {
+        "title": "Zootopia",
+        "image": "zootopia.jpeg",
+        "slug": "7-zootopia",
+        "release_date": "2016-03-04",
+        "directed_by": 1,
+        "summary": "Animals live like humans.",
+        "content": "In a remote village overshadowed by ancient mountains, a young hero named Kael learns of a legendary dragon that may be the key to saving his people from a looming catastrophe. Guided by mysterious mentors, Kael journeys through hidden valleys, enchanted forests, and treacherous peaks, forging alliances with unlikely companions along the way. The dragon, a creature of immense power and wisdom, challenges Kael to confront his fears, embrace his potential, and discover the courage within. Through epic battles, clever problem-solving, and moments of self-reflection, Kael grows from a timid villager into a brave and compassionate leader. This story celebrates adventure, self-discovery, and the enduring value of courage, teaching that the greatest heroes are those who rise to the challenge with heart and determination, inspiring audiences to believe in the extraordinary.",
+        "favourite": true,
+        "tag": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 8,
+    "fields": {
+        "title": "Big Hero 6",
+        "image": "big_hero_6.jpeg",
+        "slug": "8-big-hero-6",
+        "release_date": "2014-11-07",
+        "directed_by": 2,
+        "summary": "Technology meets friendship.",
+        "content": "In a lively town filled with laughter, mischief, and talking animals, a young protagonist embarks on a series of humorous adventures that challenge their creativity, patience, and heart. From escaping runaway pets to solving mysterious pranks, the journey blends comedy, warmth, and life lessons about empathy, friendship, and understanding. Alongside a cast of quirky sidekicks, the protagonist learns that mistakes can lead to growth, and that humor can illuminate even the most challenging situations. This story is filled with whimsical charm, endearing characters, and moments of heartfelt comedy, highlighting the joy of embracing life’s unpredictability and the magic that exists in everyday interactions. Audiences are left laughing, reflecting, and inspired by the cleverness and warmth of the tale.",
+        "favourite": true,
+        "tag": [
+            1,
+            3,
+            6
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 9,
+    "fields": {
+        "title": "Soul",
+        "image": "soul.jpeg",
+        "slug": "9-soul",
+        "release_date": "2020-12-25",
+        "directed_by": 4,
+        "summary": "Finding purpose in life.",
+        "content": "Among the stars and constellations, two siblings embark on a cosmic journey to save the universe from encroaching darkness. They traverse celestial landscapes, encounter extraordinary creatures, and solve cosmic riddles that test their intelligence, bravery, and teamwork. Through trials and triumphs, the siblings discover the importance of trust, perseverance, and the unbreakable bond of family. Their adventure highlights the thrill of discovery, the awe of the unknown, and the power of hope to illuminate even the vastest void. With breathtaking visuals, imaginative world-building, and characters that embody courage and compassion, this story inspires audiences to dream big, believe in themselves, and understand that even small actions can change the fate of worlds.",
+        "favourite": false,
+        "tag": [
+            1,
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 10,
+    "fields": {
+        "title": "Luca",
+        "image": "luca.jpeg",
+        "slug": "10-luca",
+        "release_date": "2021-06-18",
+        "directed_by": 3,
+        "summary": "A summer of friendship.",
+        "content": "In a realm where ancient legends and timeless tales coexist, a collection of stories unfolds, each filled with magic, wonder, and moral lessons. From heroic quests to mystical adventures, the characters navigate challenges that test their integrity, courage, and compassion. Through encounters with mythical creatures, enchanted landscapes, and magical artifacts, the protagonists learn the value of friendship, perseverance, and kindness. These intertwined tales celebrate imagination, creativity, and the enduring power of storytelling to inspire, teach, and uplift. Audiences are transported into a world where every choice matters, bravery is rewarded, and hope shines even in the darkest moments, leaving them captivated and enchanted long after the stories conclude.",
+        "favourite": false,
+        "tag": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 11,
+    "fields": {
+        "title": "Aladdin",
+        "image": "aladdin.jpeg",
+        "slug": "11-aladdin",
+        "release_date": "2019-05-24",
+        "directed_by": 5,
+        "summary": "A street-smart boy discovers a magical lamp.",
+        "content": "Aladdin embarks on a magical adventure with Genie.",
+        "favourite": false,
+        "tag": [
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 12,
+    "fields": {
+        "title": "Beauty and the Beast",
+        "image": "beauty_beast.jpeg",
+        "slug": "12-beauty-and-the-beast",
+        "release_date": "2017-03-17",
+        "directed_by": 6,
+        "summary": "A tale as old as time.",
+        "content": "Belle finds love in an enchanted castle.",
+        "favourite": false,
+        "tag": [
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 13,
+    "fields": {
+        "title": "Cinderella",
+        "image": "cinderella.jpeg",
+        "slug": "13-cinderella",
+        "release_date": "2015-03-13",
+        "directed_by": 7,
+        "summary": "A magical transformation changes her destiny.",
+        "content": "Cinderella overcomes cruelty with kindness.",
+        "favourite": false,
+        "tag": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 14,
+    "fields": {
+        "title": "The Lion King",
+        "image": "lion_king.jpeg",
+        "slug": "14-the-lion-king",
+        "release_date": "2019-07-19",
+        "directed_by": 8,
+        "summary": "A lion cub embraces his royal destiny.",
+        "content": "Simba journeys from exile to kingship.",
+        "favourite": false,
+        "tag": [
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 15,
+    "fields": {
+        "title": "Moana",
+        "image": "moana.jpeg",
+        "slug": "15-moana",
+        "release_date": "2016-11-23",
+        "directed_by": 9,
+        "summary": "A brave girl sails beyond the reef.",
+        "content": "Moana restores the heart of Te Fiti.",
+        "favourite": false,
+        "tag": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "blog.posts",
+    "pk": 16,
+    "fields": {
+        "title": "Tangled",
+        "image": "tangled.jpeg",
+        "slug": "16-tangled",
+        "release_date": "2010-11-24",
+        "directed_by": 10,
+        "summary": "A lost princess with magical hair.",
+        "content": "Rapunzel discovers the world beyond her tower.",
+        "favourite": false,
+        "tag": [
+            1,
+            2,
+            4
+        ]
+    }
+}
+]

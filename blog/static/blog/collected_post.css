@@ -18,7 +18,10 @@
     display: grid;
     row-gap: 20px;
     grid-template-columns: 350px 350px 350px;
-    margin: 0 400px 0 400px;
+    margin: 2px 400px 0 400px;
+    border : 2px solid black;
+    border-radius: 16px;
+    padding-top: 10px;
 }
 
 img {

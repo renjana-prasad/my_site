@@ -42,6 +42,8 @@ figcaption.text {
 
 .post-allign{
     display: flex;
+    gap: 2rem; /* space between each post */
+    justify-content: center; /* optional: center posts horizontally */
 }
 
 #about {

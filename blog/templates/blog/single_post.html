@@ -12,12 +12,21 @@
     
     {% include "blog/includes/header.html" %}
 
-    <div class = "post-info">
-        <div class = "group-img-title">
-            <h1> {{ single_post.title }} </h1>
-            <img src="{% static '/blog/images/' %}{{ single_post.image }}" alt="{{ post.title }}" onerror="this.onerror=null;this.src='{% static 'blog/images/disney_fallback.jpeg' %}';">
+    <div class="post-info">
+        <div class="group-img-title">
+            <div class="title-tags-container">
+                <h1>{{ single_post.title }}</h1>
+                <div class="tags-container">
+                    {% for tag in single_post.tag_names %}
+                        <span class="title-and-tags">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            <img src="{% static '/blog/images/' %}{{ single_post.image }}" 
+                alt="{{ single_post.title }}" 
+                onerror="this.onerror=null;this.src='{% static 'blog/images/disney_fallback.jpeg' %}';">
         </div>
-        <p> {{ single_post.directed_by }} </p>
+        <p> <a href="mailto:{{ single_post.directed_by.email_address }}">{{ single_post.directed_by }}</a></p>
         <p> Released on {{ single_post.release_date }} </p>
     </div>
 
