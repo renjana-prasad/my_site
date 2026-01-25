@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block html_title %} {{ single_post.title }} {% endblock %}
+
+{% block css_files %}
+    <link rel = "stylesheet" href = "{% static "includes/header.css" %}">
+    <link rel = "stylesheet" href = "{% static 'blog/read_later.css' %}">
+{% endblock %}
+
+{% block body_contents %}
+    {% include "blog/includes/header.html" %}
+
+    <div class='read-later'>
+        {% if read_later %}            
+            {% for data in read_later %}
+                <div id='list_data'>
+                    {{ data }}
+                    <form action = "{% url 'read_later' %}" method="POST">
+                        {% csrf_token %}
+                        <input type='hidden' name='remove' value='{{ data }}'>
+                        <button> Remove </button>
+                    </form>
+                </div>
+            {% endfor %}            
+        {% else %}
+            <h1> No data for Read Later </h2>
+        {% endif %}
+    </div>
+
+{% endblock %}  

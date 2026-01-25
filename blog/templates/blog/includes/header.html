@@ -1,6 +1,19 @@
 <header>
     <nav>
-        <a href="{% url 'blog_home' %}">Renju's Blog</a>
-        <a href="{% url 'collected_post' %}">All Post</a>
+        <div class="nav-left">
+            <a href="{% url 'blog_home' %}">Renju's Blog</a>
+        </div>
+        <div class="nav-right">
+            <a href="{% url 'collected_post' %}">All Post</a>
+            <a href="{% url 'read_later' %}">Read Later</a>
+        </div>
     </nav>
 </header>
+
+{% comment %} <header>
+    <nav>
+        <a href="{% url 'blog_home' %}">Renju's Blog</a>
+        <a href="{% url 'collected_post' %}">All Post</a>
+        <a href="{% url 'read_later' %}">Read Later</a>
+    </nav>
+</header> {% endcomment %}

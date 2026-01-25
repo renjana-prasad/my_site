@@ -3,7 +3,7 @@
 }
 
 .each-post{
-    max-width: 300px;
+    width: 300px;
     margin: 0 auto;
     padding-block-start: 10px;
     padding-bottom: 10px;
@@ -21,7 +21,7 @@
     margin: 2px 400px 0 400px;
     border : 2px solid black;
     border-radius: 16px;
-    padding-top: 10px;
+    padding: 10px 10px;
 }
 
 img {

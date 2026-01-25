@@ -2,7 +2,7 @@
 
 <a href="{% url 'individual_post' post.slug %}" class="post-link">
     <div>
-        <img src="{% static '/blog/images/' %}{{ post.image }}" alt="{{ post.title }}" onerror="this.onerror=null;this.src='{% static 'blog/images/disney_fallback.jpeg' %}';">
+        <img src="{{ post.image.url }}" alt="{{ post.title }}" onerror="this.onerror=null;this.src='{% static 'blog/images/disney_fallback.jpeg' %}';">
         <h1>{{ post.title }}</h1>
         <p>{{ post.summary }}</p>
     </div>

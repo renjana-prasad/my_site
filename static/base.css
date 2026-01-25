@@ -1,5 +1,7 @@
+ 
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .post-link{
@@ -18,3 +20,4 @@ body {
     background-color: lightcyan;
     transform: scale(1.2);
 }
+

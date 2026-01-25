@@ -21,12 +21,23 @@
                         <span class="title-and-tags">{{ tag }}</span>
                     {% endfor %}
                 </div>
+                <div id='read-later'>
+                    {% if read_later %}
+                        <form action = "{% url 'read_later' %}" method="POST">
+                            {% csrf_token %}
+                            <input type='hidden' name='title' value='{{ single_post.title }}'>
+                            <button> Read Later </button>
+                        </form>
+                    {% else %}
+                        <p>Marked for read later</p>
+                    {% endif %}
+                </div>
             </div>
-            <img src="{% static '/blog/images/' %}{{ single_post.image }}" 
+            <img src="{{ single_post.image.url }}" 
                 alt="{{ single_post.title }}" 
                 onerror="this.onerror=null;this.src='{% static 'blog/images/disney_fallback.jpeg' %}';">
         </div>
-        <p> <a href="mailto:{{ single_post.directed_by.email_address }}">{{ single_post.directed_by }}</a></p>
+        <p> <a href="https://www.imdb.com/" target='_blank'>{{ single_post.directed_by }} - {{ single_post.directed_by.email_address }}</a></p>
         <p> Released on {{ single_post.release_date }} </p>
     </div>
 
@@ -34,4 +45,29 @@
         <p id = 'summary_content'>{{ single_post.content }}</p>
     </div>
 
+    <div class = 'comment-form'>
+        {% for comment in list_of_comments %}
+            <div>
+                <p>{{ comment.user_name }} - {{ comment.user_email }}</p>
+                <p>{{ comment.comments }}</p>
+                <hr>
+            </div>
+            {% empty %}
+            <p>No comments yet.</p>
+        {% endfor %}
+    </div>
+
+    <div class = 'comment-form'>
+        <h2> Your Comments </h2>
+        <form class="comment-form" action = "{% url 'individual_post' single_post.slug %}" method="POST">
+            {% csrf_token %}
+            {% for form_field in form_data %}
+                <div class ="form-control">
+                    {{ form_field.label_tag }}
+                    {{ form_field }}
+                    {{ form_field.errors }}
+            {% endfor %}
+            <button> Save Comment </button>
+        </form>
+    </div>
 {% endblock %}  

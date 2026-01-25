@@ -32,10 +32,9 @@ class Director(models.Model):
         ]
 
 
-
 class Posts(models.Model):
     title = models.CharField(max_length=80)
-    image = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images')
     slug = models.SlugField(unique=True, blank=True, null=True, db_index=True)
     release_date = models.DateField()
     directed_by = models.ForeignKey(Director, on_delete=models.SET_NULL,null=True, related_name='posts')
@@ -57,6 +56,15 @@ class Posts(models.Model):
             self.slug = f"{self.id}-{slugify(self.title)}"
             # Update only the slug field to avoid re-inserting
             Posts.objects.filter(id=self.id).update(slug=self.slug)
+    
+    def __str__(self):
+        return f"Post: {self.title}"
 
     class Meta:
         verbose_name_plural = "Post Details"
+
+class Comments(models.Model):
+    user_name = models.CharField(max_length=120)
+    user_email = models.EmailField()
+    comments = models.TextField(max_length=400)
+    post = models.ForeignKey(Posts, on_delete=models.SET_NULL,null=True, related_name='comments')

@@ -1,7 +1,7 @@
 header {
     background-color: purple;
     width: 100%;
-    padding: 0 4em;
+    padding: 2rem 4em;
     box-sizing: border-box;
 }
 
@@ -18,4 +18,19 @@ header nav a {
   color: #f3eded;
   text-decoration: none;
   font-size: 30px;
+}
+
+.nav-left a {
+    padding: 2rem 0 2rem 0;
+    color: #f3eded;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-right a {
+    padding: 2rem 0 2rem 0;
+    color: #f3eded;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 3rem; /* space between the links */
 }
