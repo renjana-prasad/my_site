@@ -7,3 +7,5 @@ my_site/__pycache__/
 db.sqlite3
 *.sqlite3db.sqlite3
 .DS_Store
+staticfiles
+.env
